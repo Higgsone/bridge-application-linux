@@ -94,6 +94,9 @@ obj-$(CONFIG_LEDS_DAC124S085)		+= leds-dac124s085.o
 obj-$(CONFIG_LEDS_EL15203000)		+= leds-el15203000.o
 obj-$(CONFIG_LEDS_SPI_BYTE)		+= leds-spi-byte.o
 
+# LED I2C Drivers
+obj-$(CONFIG_LEDS_KTD202X)		+= leds-ktd202x.o
+
 # LED Userspace Drivers
 obj-$(CONFIG_LEDS_USER)			+= uleds.o
 
