@@ -75,6 +75,17 @@ config TYPEC_STUSB160X
 	  If you choose to build this driver as a dynamically linked module, the
 	  module will be called stusb160x.ko.
 
+config TYPEC_UPD350
+	tristate "Microchip UPD350 Type-C and PD controller driver"
+	depends on USB_ROLE_SWITCH || !USB_ROLE_SWITCH
+	depends on I2C
+	help
+	  Say Y or M here if your system has Microchip UPD350
+	  Type-C port and PD controller.
+
+	  If you choose to build this driver as a dynamically linked module, the
+	  module will be called upd350.ko.
+
 config TYPEC_QCOM_PMIC
 	tristate "Qualcomm PMIC USB Type-C driver"
 	depends on ARCH_QCOM || COMPILE_TEST
